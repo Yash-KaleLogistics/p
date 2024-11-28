@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--CornerImage-->
+    <declare-styleable name="CornerImage">
+        <attr name="eStrokeWidth" format="dimension" />
+        <attr name="eStrokeColor" format="color" />
+        <attr name="eStrokeOverlay" format="boolean" />
+        <attr name="eBackground" format="color" />
+    </declare-styleable>
+
+    <!--CornerLayout-->
+    <declare-styleable name="CornerLayout">
+        <attr name="Radius" format="dimension"/>
+        <attr name="TopLeft" format="dimension"/>
+        <attr name="TopRight" format="dimension"/>
+        <attr name="BottomLeft" format="dimension"/>
+        <attr name="BottomRight" format="dimension"/>
+        <attr name="StrokeWidth" format="dimension"/>
+        <attr name="StrokeColor" format="color"/>
+        <attr name="iBackground" format="color"/>
+        <attr name="iBorderColor" format="color"/>
+    </declare-styleable>
+
+    <!--CircleView-->
+    <declare-styleable name="CircleView">
+        <attr name="cv_strokeWidthSize" format="float" />
+        <attr name="cv_fillRadius" format="float" />
+        <attr name="cv_fillColor" format="color" />
+        <attr name="cv_strokeColorValue" format="color" />
+        <attr name="cv_backgroundColorValue" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="scv_CropImageView">
+        <attr format="reference" name="scv_img_src"/>
+        <attr name="scv_crop_mode">
+            <enum name="fit_image" value="0"/>
+            <enum name="ratio_4_3" value="1"/>
+            <enum name="ratio_3_4" value="2"/>
+            <enum name="square" value="3"/>
+            <enum name="ratio_16_9" value="4"/>
+            <enum name="ratio_9_16" value="5"/>
+            <enum name="free" value="6"/>
+            <enum name="custom" value="7"/>
+            <enum name="circle" value="8"/>
+            <enum name="circle_square" value="9"/>
+        </attr>
+        <attr format="reference|color" name="scv_background_color"/>
+        <attr format="reference|color" name="scv_overlay_color"/>
+        <attr format="reference|color" name="scv_frame_color"/>
+        <attr format="reference|color" name="scv_handle_color"/>
+        <attr format="reference|color" name="scv_guide_color"/>
+        <attr name="scv_guide_show_mode">
+            <enum name="show_always" value="1"/>
+            <enum name="show_on_touch" value="2"/>
+            <enum name="not_show" value="3"/>
+        </attr>
+        <attr name="scv_handle_show_mode">
+            <enum name="show_always" value="1"/>
+            <enum name="show_on_touch" value="2"/>
+            <enum name="not_show" value="3"/>
+        </attr>
+        <attr format="dimension" name="scv_handle_size"/>
+        <attr format="dimension" name="scv_touch_padding"/>
+        <attr format="dimension" name="scv_min_frame_size"/>
+        <attr format="dimension" name="scv_frame_stroke_weight"/>
+        <attr format="dimension" name="scv_guide_stroke_weight"/>
+        <attr format="boolean" name="scv_crop_enabled"/>
+        <attr format="float" name="scv_initial_frame_scale"/>
+        <attr format="boolean" name="scv_animation_enabled"/>
+        <attr format="integer" name="scv_animation_duration"/>
+        <attr format="boolean" name="scv_handle_shadow_enabled"/>
+    </declare-styleable>
+
+</resources>
